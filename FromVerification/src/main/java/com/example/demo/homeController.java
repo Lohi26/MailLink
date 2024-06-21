@@ -113,7 +113,7 @@ public class homeController {
             contentStream.newLineAtOffset(0, -leading);
 
             String status=details.getResidentialStatus().toString();
-            if(status=="H")
+            if(status.equals("H"))
             	status+="osteller";
             else
             	status+="ays Scholar";
@@ -124,7 +124,7 @@ public class homeController {
             contentStream.newLineAtOffset(0, -leading);
 
             String place=details.getPlacement().toString();
-            if(place=="Y")
+            if(place.equals("Y"))
             	place+="es";
             else
             	place+="o";
