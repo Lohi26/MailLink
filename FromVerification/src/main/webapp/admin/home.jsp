@@ -124,9 +124,7 @@
     <script>
         // Example of handling form submission with an alert
         document.querySelector('.submit-btn').addEventListener('click', function(event) {
-        	if(document.querySelector('input-field')==null)
-        		alert("Please fill out the form!...");
-        	else
+        	if(document.getElementById('registerNumber'))
             alert("Form is submitted successfully and verification mail has been sent to the specified email id.");
         });
     </script>
