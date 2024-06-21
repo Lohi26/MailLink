@@ -140,7 +140,6 @@
 	document.querySelector('.Submitting').addEventListener('click', function(event) {
 	    alert("Form is submitted successfully and verification mail has been sent to the specified email id.");
 	});
-
 </script>
 </body>
 </html>

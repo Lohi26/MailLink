@@ -2,8 +2,6 @@ package com.example.demo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -23,7 +21,7 @@ public class VerifyDetails {
 	@Column(name="Email_id")
 	public String email;
 	@Column(name="Phone_Number")
-	public int phoneNumber;
+	public String phoneNumber;
 	@Column(name="Gender")
 	public String gender;
 	@Column(name="City")
@@ -66,10 +64,10 @@ public class VerifyDetails {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	public String getGender() {
