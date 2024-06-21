@@ -10,7 +10,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import javax.mail.MessagingException; // Correct import for javax.mail
+import javax.mail.MessagingException; 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
@@ -113,7 +113,7 @@ public class homeController {
             contentStream.newLineAtOffset(0, -leading);
 
             String status=details.getResidentialStatus();
-            if(status=="D")
+            if(status=="H")
             	status+="osteller";
             else
             	status+="ays Scholar";
@@ -125,9 +125,9 @@ public class homeController {
 
             String place=details.getPlacement();
             if(place=="Y")
-            	place+='o';
-            else
             	place+="es";
+            else
+            	place+="o";
             contentStream.setFont(PDType1Font.HELVETICA_BOLD,12);
             contentStream.showText("Placement Involvement:");
             contentStream.setFont(PDType1Font.HELVETICA,12);
