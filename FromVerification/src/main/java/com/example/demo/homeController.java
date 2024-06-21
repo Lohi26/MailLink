@@ -112,7 +112,7 @@ public class homeController {
             contentStream.showText(" " + details.getAddress());
             contentStream.newLineAtOffset(0, -leading);
 
-            String status=details.getResidentialStatus();
+            String status=details.getResidentialStatus().toString();
             if(status=="H")
             	status+="osteller";
             else
@@ -123,7 +123,7 @@ public class homeController {
             contentStream.showText(" " + status);
             contentStream.newLineAtOffset(0, -leading);
 
-            String place=details.getPlacement();
+            String place=details.getPlacement().toString();
             if(place=="Y")
             	place+="es";
             else
